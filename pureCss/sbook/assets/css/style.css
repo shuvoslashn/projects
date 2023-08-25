@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --font: 'Poppins', sans-serif;
+    --light-gray: #efefef;
+    --primary-color: #0e4f62;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+body {
+    font-size: 16px;
+    background: var(--light-gray);
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+.navbar {
+    background-color: var(--primary-color);
+    padding: 5px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    width: 160px;
+}
+.nav-left {
+    display: flex;
+    gap: 45px;
+    align-items: center;
+}
+.nav-icon-list {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+}
+.nav-icon-list img {
+    height: 24px;
+    display: block;
+}
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.search-box {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    background-color: #fff;
+    padding: 8px 15px;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
+.search-input,
+.search-input:focus {
+    border: none;
+    outline: none;
+}
+
+.user-profile img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+    display: block;
+    position: relative;
+}
+.user-profile {
+    position: relative;
+    cursor: pointer;
+}
+.user-profile::after {
+    content: '';
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    background-color: rgb(7, 183, 7);
+    right: 0;
+    top: 0;
+    z-index: 2222;
+    border: 1px solid #fff;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
