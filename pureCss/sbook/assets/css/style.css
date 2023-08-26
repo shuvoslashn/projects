@@ -140,6 +140,7 @@ a {
     align-items: center;
     gap: 12px;
     font-weight: 500;
+    color: #676869;
 }
 .imp-links a:hover {
     color: var(--primary-color);
