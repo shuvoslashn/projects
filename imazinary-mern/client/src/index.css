@@ -5,6 +5,17 @@
 @layer base {
     * {
         font-family: 'Poppins', sans-serif;
+        line-height: 165%;
+        @apply text-gray-500;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply text-gray-700 drop-shadow-xl;
     }
 
     @media screen and (min-width: 480px) {
