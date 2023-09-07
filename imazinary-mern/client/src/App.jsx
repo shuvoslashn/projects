@@ -21,7 +21,7 @@ const App = () => {
                 {/* Header End */}
 
                 {/* Main Area Start */}
-                <main className='z-0 bg-gray-50 w-full min-h-[calc(100vh-72px)]'>
+                <main className='z-0 bg-gray-50 w-full min-h-[calc(100vh-78px)]'>
                     <div className='container'>
                         <Routes>
                             <Route path='/' element={<Home />} />

@@ -18,11 +18,11 @@ const Home = () => {
 
     // return ui
     return (
-        <section className='mx-auto py-10 md:py-24'>
+        <section className='py-8'>
             <div className='container'>
                 {/* after header heading area  */}
                 <div className=''>
-                    <h1 className='font-medium text-2xl md:text-4xl'>Generated Ai Image Showcase</h1>
+                    <h1 className='font-medium text-2xl'>Generated Ai Image Showcase</h1>
                     <p className='mt-3'>
                         Browse through a collection of imaginative and visually stunning images generativd By Imazinary
                         Artificial Inteligent System.
