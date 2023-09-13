@@ -32,7 +32,7 @@ const Header = () => {
 
     const navLink = `py-5 font-medium hover:text-blue-500 duration-300 relative after:absolute after:-bottom-0 after:w-0 hover:after:w-full after:h-1 after:bg-blue-500 after:left-0 after:duration-300`;
     return (
-        <header className='bg-white relative z-30 h-[66px] flex justify-center items-center'>
+        <header className='bg-white relative z-30 h-[66px] flex justify-center items-center shadow-2xl shadow-blue-950/5'>
             <div className='container flex justify-between items-center w-full'>
                 {/* logo here */}
                 <div className='-mt-2'>
