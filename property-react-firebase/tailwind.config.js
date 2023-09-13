@@ -9,7 +9,11 @@ export default {
         fontFamily: {
             poppins: ['Poppins', 'sans-serif'],
         },
-        extend: {},
+        extend: {
+            screens: {
+                xl: '1280px',
+            },
+        },
     },
     plugins: [],
 };
