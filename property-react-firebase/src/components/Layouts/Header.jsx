@@ -29,7 +29,7 @@ const Header = () => {
             <div className='container flex justify-between items-center w-full'>
                 {/* logo here */}
                 <div className='-mt-2'>
-                    <Link to={'/'}>
+                    <Link to={'/'} onClick={() => setActive(false)}>
                         <img src={logo} alt='Property App logo' className='h-10' />
                     </Link>
                 </div>
@@ -37,25 +37,25 @@ const Header = () => {
                 {/* desktop menu */}
                 {active ? (
                     <nav className='transition-all duration-500 opacity-100 flex gap-6 absolute left-0 top-[66px] w-full h-[calc(100vh-66px)] pb-32 justify-center items-center flex-col bg-white/5 backdrop-blur-md'>
-                        <Link className={navLink} to={'/'}>
+                        <Link onClick={() => setActive(false)} className={navLink} to={'/'}>
                             Home
                         </Link>
-                        <Link className={navLink} to={'/offers'}>
+                        <Link onClick={() => setActive(false)} className={navLink} to={'/offers'}>
                             Offers
                         </Link>
-                        <Link className={navLink} to={'/sign-in'}>
+                        <Link onClick={() => setActive(false)} className={navLink} to={'/sign-in'}>
                             SignIn
                         </Link>
                     </nav>
                 ) : (
                     <nav className='invisible sm:visible opacity-0 sm:opacity-100 flex justify-center items-center sm:flex-row flex-col gap-6 duration-500 transition-all absolute top-10 sm:static w-full sm:w-auto h-[calc(100vh-66px)] left-0 sm:h-auto p-24 sm:p-0  bg-white/5 backdrop-blur-md sm:bg-transparent'>
-                        <Link className={navLink} to={'/'}>
+                        <Link onClick={() => setActive(false)} className={navLink} to={'/'}>
                             Home
                         </Link>
-                        <Link className={navLink} to={'/offers'}>
+                        <Link onClick={() => setActive(false)} className={navLink} to={'/offers'}>
                             Offers
                         </Link>
-                        <Link className={navLink} to={'/sign-in'}>
+                        <Link onClick={() => setActive(false)} className={navLink} to={'/sign-in'}>
                             SignIn
                         </Link>
                     </nav>
