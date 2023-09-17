@@ -83,14 +83,14 @@ const Navbar = () => {
                     </Badge>
                     <Avatar
                         sx={{ width: 35, height: 35, cursor: "pointer" }}
-                        src='https://i.ibb.co/cTn5fjP/one.jpg'
+                        src='https://i.ibb.co/6Rg6v33/pngegg.png'
                         onClick={(e) => setOpen(true)}
                     />
                 </Icons>
                 <UserBox onClick={(e) => setOpen(true)}>
                     <Avatar
                         sx={{ width: 30, height: 30, cursor: "pointer" }}
-                        src='https://i.ibb.co/cTn5fjP/one.jpg'
+                        src='https://i.ibb.co/6Rg6v33/pngegg.png'
                     />
                     <Typography fontWeight={500}>Shuvo</Typography>
                 </UserBox>
