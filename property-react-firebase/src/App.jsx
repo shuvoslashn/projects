@@ -1,11 +1,11 @@
-import React from 'react';
-import { Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
-import Profile from './pages/authComponents/Profile';
-import SignIn from './pages/authComponents/SignIn';
-import SignUp from './pages/authComponents/SignUp';
-import ForgotPassword from './pages/authComponents/ForgotPassword';
-import Offers from './pages/Offers';
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Profile from "./pages/authComponents/Profile";
+import SignIn from "./pages/authComponents/SignIn";
+import SignUp from "./pages/authComponents/SignUp";
+import ForgotPassword from "./pages/authComponents/ForgotPassword";
+import Offers from "./pages/Offers";
 
 const App = () => {
     return (
