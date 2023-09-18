@@ -56,11 +56,13 @@ const Add = () => {
                         maxWidth: "500px",
                         width: "100%",
                         minHeight: "200px",
-                        background: "#fff",
                         padding: "30px",
                         paddingTop: "20px",
                         borderRadius: "16px",
+                        margin: "30px",
                     }}
+                    bgcolor={"background.default"}
+                    color={"text.primary"}
                 >
                     <Typography
                         id='modal-modal-title'
