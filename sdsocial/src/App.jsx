@@ -7,6 +7,9 @@ import Navbar from "./components/Navbar";
 import Add from "./components/Add";
 
 const App = () => {
+
+    
+
     return (
         <>
             <Box>
