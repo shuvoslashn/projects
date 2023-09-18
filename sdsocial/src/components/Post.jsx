@@ -42,11 +42,11 @@ const Post = ({ img }) => {
                 />
                 <CardMedia
                     component='img'
-                    height='500px'
+                    height='360px'
                     image={img}
                     alt='Paella dish'
                 />
-                <Box sx={{ p: "20px" }}>
+                <Box sx={{ paddingX: "20px", paddingY: "10px" }}>
                     <CardContent>
                         <Typography variant='body2' color='text.secondary'>
                             This impressive paella is a perfect party dish and a

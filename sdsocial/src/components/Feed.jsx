@@ -9,9 +9,6 @@ const Feed = () => {
         <Box
             flex={5}
             p={2}
-            sx={{
-                display: { xs: "none", sm: "block" }
-            }}
         >
             <Post
                 img={
