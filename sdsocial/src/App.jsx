@@ -10,15 +10,17 @@ const App = () => {
         <div>
             <Box>
                 <Navbar />
-                <Stack
-                    direction='row'
-                    spacing={2}
-                    justifyContent={"space-between"}
+                <Box
+                    sx={{
+                        display: "flex",
+                        justifyContent: "space-between",
+                        flexDirection: "row",
+                    }}
                 >
                     <Sidebar />
                     <Feed />
                     <Rightbar />
-                </Stack>
+                </Box>
             </Box>
         </div>
     );

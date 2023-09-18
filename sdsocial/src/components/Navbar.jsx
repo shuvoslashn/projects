@@ -1,12 +1,11 @@
 import styled from "@emotion/styled";
-import { Mail, Notifications } from "@mui/icons-material";
+import { Mail, Notifications, SearchOutlined } from "@mui/icons-material";
 import SportsVolleyballIcon from "@mui/icons-material/SportsVolleyball";
 import {
     AppBar,
     Avatar,
     Badge,
     Box,
-    Icon,
     InputBase,
     Menu,
     MenuItem,
@@ -21,8 +20,9 @@ const StyledToolBar = styled(Toolbar)({
 });
 
 const Search = styled("div")(({ theme }) => ({
+    position: "relative",
     backgroundColor: "#fff2",
-    padding: "0 10px",
+    padding: "8px 42px",
     borderRadius: theme.shape.borderRadius,
     width: "40%",
     input: {
@@ -64,13 +64,19 @@ const Navbar = () => {
                         fontWeight={700}
                         sx={{ display: { xs: "none", sm: "block" } }}
                     >
-                        SDSOCIAL
+                        SDCIAL
                     </Typography>
                 </Box>
 
                 {/* search */}
                 <Search>
-                    <InputBase placeholder='Search Here' />
+                    <SearchOutlined
+                        sx={{ position: "absolute", top: 11, left: 12 }}
+                    />
+                    <InputBase
+                        placeholder={`Search Here`}
+                        sx={{ width: "100%" }}
+                    />
                 </Search>
 
                 {/* icons */}

@@ -7,7 +7,9 @@ const Rightbar = () => {
             bgcolor={"coral"}
             flex={3}
             p={2}
-            sx={{ display: { xs: "none", sm: "block" } }}
+            sx={{
+                display: { xs: "none", sm: "block" }
+            }}
         >
             Rightbar
         </Box>
