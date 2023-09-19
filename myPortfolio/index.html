@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Shuvo Sarker - Front End Developer</title>
+        <link
+            href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./src/output.css" />
+    </head>
+    <body>
+        <!---------  Header Area Start  --------->
+        <header class="fixed w-full z-50 bg-base-100">
+            <div class="navbar container">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-5 w-5"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16"
+                                />
+                            </svg>
+                        </label>
+                        <ul
+                            tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+                        >
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#about">About Me</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost normal-case text-xl"
+                        >Shuvo Sarker</a
+                    >
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#about">About Me</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end mr-8 md:mr-0">
+                    <a href="mailto:dev.shuvosarker@gmail.com" class="px-4 py-2 bg-amber-500 text-black font-medium rounded-full shadow-amber-500/20 shadow-lg">Contact</a>
+                </div>
+            </div>
+        </header>
+        <!---------  Header Area End  --------->
+
+        <!---------  Hero Section Start  --------->
+        <section
+            id="home"
+            class="min-h-[50vh] flex items-center justify-center"
+        >
+            <div class="container">
+                <div
+                    class="flex flex-col lg:flex-row py-24 w-full h-full items-center justify-between gap-12"
+                >
+                    <!-- hero left -->
+                    <div class="text-center lg:text-left relative">
+                        <p
+                            class="text-xl px-8 py-2 bg-zinc-400/10 rounded-full text-white/60 inline-block"
+                        >
+                            Hi, I'm Shuvo
+                        </p>
+                        <h1
+                            class="text-4xl lg:text-8xl font-bold mt-6 mb-4 text-white"
+                        >
+                            Front End
+                        </h1>
+                        <h2 class="text-xl lg:text-6xl font-bold">
+                            Web Developer 😎
+                        </h2>
+                        <a href="mailto:dev.shuvosarker@gmail.com" class="text-2xl mt-8 inline-block">dev.shuvosarker@gmail.com 💌</a>
+                        <div
+                            class="flex flex-col md:flex-row gap-0 md:gap-4 items-center"
+                        >
+                            <a
+                                href="#projects"
+                                class="inline-block text-md md:text-2xl px-8 py-4 mt-12 bg-amber-500 text-black font-bold rounded-full"
+                                >View Projects 👇</a
+                            >
+                            <a
+                                href="https://github.com/shuvoslashn"
+                                target="_blank"
+                                ><i
+                                    class="bx bxl-github text-6xl inline-block pt-12"
+                                ></i
+                            ></a>
+                        </div>
+
+                        <div
+                            class="w-24 h-32 bg-indigo-500/30 absolute right-0 top-0 rounded-full blur-3xl animate-spin"
+                        ></div>
+                    </div>
+                    <!-- hero right -->
+                    <img
+                        src="src/assets/cyber.jpg"
+                        alt=""
+                        class="max-w-[600px] w-full rounded-3xl"
+                    />
+                </div>
+            </div>
+        </section>
+        <!---------  Hero Section End  --------->
+
+        <!---------  Project Section Start  --------->
+        <section id="projects" class="py-24">
+            <div class="container">
+                <!-- section header start -->
+                <div class="text-center pb-8 md:pb-16">
+                    <h2 class="text-3xl md:text-6xl font-bold text-amber-500">
+                        My Projects 🤔
+                    </h2>
+                </div>
+                <!-- section header end -->
+
+                <!-- project section start -->
+                <div class="flex gap-8 flex-wrap">
+                    <!-- single project 01 start -->
+                    <a
+                        href="http://shuvo-helper.surge.sh/"
+                        target="_blank"
+                        class="p-2 bg-white/10 rounded-3xl basis-1/4 flex-grow group"
+                    >
+                        <div class="overflow-hidden rounded-2xl">
+                            <img
+                                src="/src/assets/project-helper.png"
+                                alt="project helper"
+                                class="w-full h-full object-cover scale-105"
+                            />
+                        </div>
+                        <div class="p-2">
+                            <h3 class="text-2xl">
+                                <span class="font-bold">Helper</span> (working)
+                            </h3>
+                            <h5 class="text-lg">onDemand Home Service</h5>
+                            <hr class="opacity-10 my-4" />
+                            <h5 class="text-lg pb-3">Technologies</h5>
+                            <div class="flex gap-4 flex-wrap">
+                                <div class="px-4 py-2 bg-white/5 rounded-xl">
+                                    React
+                                </div>
+                                <div class="px-4 py-2 bg-white/5 rounded-xl">
+                                    Bootstrap 5
+                                </div>
+                                <div class="px-4 py-2 bg-white/5 rounded-xl">
+                                    API
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- single project 01 end -->
+
+                    <!-- single project 02 start -->
+                    <a
+                        href="https://shuvo-social.surge.sh/"
+                        target="_blank"
+                        class="p-2 bg-white/10 rounded-3xl basis-1/4 flex-grow"
+                    >
+                        <div class="overflow-hidden rounded-2xl">
+                            <img
+                                src="/src/assets/project-sdcial.png"
+                                alt="project sdcial"
+                                class="w-full h-full object-cover scale-105"
+                            />
+                        </div>
+                        <div class="p-2">
+                            <h3 class="text-2xl">
+                                <span class="font-bold">SDCIAL</span> (v1
+                                complete)
+                            </h3>
+                            <h5 class="text-lg">Social Media App</h5>
+                            <hr class="opacity-10 my-4" />
+                            <h5 class="text-lg pb-3">Technologies</h5>
+                            <div class="flex gap-4 flex-wrap">
+                                <div class="px-4 py-2 bg-white/5 rounded-xl">
+                                    React
+                                </div>
+                                <div class="px-4 py-2 bg-white/5 rounded-xl">
+                                    Material UI
+                                </div>
+                                <div class="px-4 py-2 bg-white/5 rounded-xl">
+                                    Styled Components
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- single project 02 end -->
+
+                    <!-- single project 03 start -->
+                    <a
+                        href="http://shuvo-react-landing.surge.sh/"
+                        target="_blank"
+                        class="p-2 bg-white/10 rounded-3xl basis-1/4 flex-grow"
+                    >
+                        <div class="overflow-hidden rounded-2xl">
+                            <img
+                                src="/src/assets/project-react-landing.png"
+                                alt="project react landing"
+                                class="w-full h-full object-cover scale-105"
+                            />
+                        </div>
+                        <div class="p-2">
+                            <h3 class="text-2xl">
+                                <span class="font-bold"
+                                    >React Tailwind Landing</span
+                                >
+                            </h3>
+                            <h5 class="text-lg">Multipurpose Landing Page</h5>
+                            <hr class="opacity-10 my-4" />
+                            <h5 class="text-lg pb-3">Technologies</h5>
+                            <div class="flex gap-4 flex-wrap">
+                                <div class="px-4 py-2 bg-white/5 rounded-xl">
+                                    React
+                                </div>
+                                <div class="px-4 py-2 bg-white/5 rounded-xl">
+                                    Tailwind CSS
+                                </div>
+                                <div class="px-4 py-2 bg-white/5 rounded-xl">
+                                    Animations
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- single project 03 end -->
+
+                    <!-- single project 04 start -->
+                    <a
+                        href="https://shuvo-tic-tac-toe.surge.sh/"
+                        target="_blank"
+                        class="p-2 bg-white/10 rounded-3xl basis-1/4 flex-grow"
+                    >
+                        <div class="overflow-hidden rounded-2xl">
+                            <img
+                                src="/src/assets/project-tic-tac-toe.png"
+                                alt="project react landing"
+                                class="w-full h-full object-cover scale-105"
+                            />
+                        </div>
+                        <div class="p-2">
+                            <h3 class="text-2xl">
+                                <span class="font-bold">Tic Tac Toe</span>
+                            </h3>
+                            <h5 class="text-lg">Game for passing time</h5>
+                            <hr class="opacity-10 my-4" />
+                            <h5 class="text-lg pb-3">Technologies</h5>
+                            <div class="flex gap-4 flex-wrap">
+                                <div class="px-4 py-2 bg-white/5 rounded-xl">
+                                    React JS
+                                </div>
+                                <div class="px-4 py-2 bg-white/5 rounded-xl">
+                                    Tailwind CSS
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- single project 04 end -->
+
+                    <!-- single project 05 start -->
+                    <a
+                        href="https://shuvo-mediavolt.surge.sh/"
+                        target="_blank"
+                        class="p-2 bg-white/10 rounded-3xl basis-1/4 flex-grow"
+                    >
+                        <div class="overflow-hidden rounded-2xl">
+                            <img
+                                src="/src/assets/project-mediavolt.png"
+                                alt="project react landing"
+                                class="w-full h-full object-cover scale-105"
+                            />
+                        </div>
+                        <div class="p-2">
+                            <h3 class="text-2xl">
+                                <span class="font-bold">MediaVolt</span>
+                            </h3>
+                            <h5 class="text-lg">Responsive file manager</h5>
+                            <hr class="opacity-10 my-4" />
+                            <h5 class="text-lg pb-3">Technologies</h5>
+                            <div class="flex gap-4 flex-wrap">
+                                <div class="px-4 py-2 bg-white/5 rounded-xl">
+                                    Tailwind CSS
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- single project 05 end -->
+
+                    <!-- single project 06 start -->
+                    <a
+                        href="https://shuvo-mosto.surge.sh/"
+                        target="_blank"
+                        class="p-2 bg-white/10 rounded-3xl basis-1/4 flex-grow"
+                    >
+                        <div class="overflow-hidden rounded-2xl">
+                            <img
+                                src="/src/assets/project-mosto-agency.png"
+                                alt="project react landing"
+                                class="w-full h-full object-cover scale-105"
+                            />
+                        </div>
+                        <div class="p-2">
+                            <h3 class="text-2xl">
+                                <span class="font-bold">Mosto</span>
+                            </h3>
+                            <h5 class="text-lg">Creative Agency</h5>
+                            <hr class="opacity-10 my-4" />
+                            <h5 class="text-lg pb-3">Technologies</h5>
+                            <div class="flex gap-4 flex-wrap">
+                                <div class="px-4 py-2 bg-white/5 rounded-xl">
+                                    Tailwind CSS
+                                </div>
+                                <div class="px-4 py-2 bg-white/5 rounded-xl">
+                                    Animate CSS
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- single project 06 end -->
+
+                    <!-- single project 07 start -->
+                    <a
+                        href="https://psychedelic-care.surge.sh/"
+                        target="_blank"
+                        class="p-2 bg-white/10 rounded-3xl basis-1/4 flex-grow"
+                    >
+                        <div class="overflow-hidden rounded-2xl">
+                            <img
+                                src="/src/assets/project-bs-builder.png"
+                                alt="project react landing"
+                                class="w-full h-full object-cover scale-105"
+                            />
+                        </div>
+                        <div class="p-2">
+                            <h3 class="text-2xl">
+                                <span class="font-bold">Builder Website</span>
+                            </h3>
+                            <h5 class="text-lg">
+                                Bootstap Multipurpose Landing Page
+                            </h5>
+                            <hr class="opacity-10 my-4" />
+                            <h5 class="text-lg pb-3">Technologies</h5>
+                            <div class="flex gap-4 flex-wrap">
+                                <div class="px-4 py-2 bg-white/5 rounded-xl">
+                                    Bootstap 5
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- single project 07 end -->
+
+                    <!-- single project 08 start -->
+                    <a
+                        href="https://shuvoslashn.github.io/agency1/"
+                        target="_blank"
+                        class="p-2 bg-white/10 rounded-3xl basis-1/4 flex-grow"
+                    >
+                        <div class="overflow-hidden rounded-2xl">
+                            <img
+                                src="/src/assets/project-bs-agency.png"
+                                alt="project react landing"
+                                class="w-full h-full object-cover scale-105"
+                            />
+                        </div>
+                        <div class="p-2">
+                            <h3 class="text-2xl">
+                                <span class="font-bold">Digital Agency</span>
+                            </h3>
+                            <h5 class="text-lg">
+                                Bootstap Multipurpose Landing Page
+                            </h5>
+                            <hr class="opacity-10 my-4" />
+                            <h5 class="text-lg pb-3">Technologies</h5>
+                            <div class="flex gap-4 flex-wrap">
+                                <div class="px-4 py-2 bg-white/5 rounded-xl">
+                                    Bootstap 4
+                                </div>
+                                <div class="px-4 py-2 bg-white/5 rounded-xl">
+                                    Animate CSS
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- single project 08 end -->
+
+                    <!-- single project 09 start -->
+                    <a
+                        href="https://nomad-shuvo3664.surge.sh/"
+                        target="_blank"
+                        class="p-2 bg-white/10 rounded-3xl basis-1/4 flex-grow"
+                    >
+                        <div class="overflow-hidden rounded-2xl">
+                            <img
+                                src="/src/assets/project-nomad.png"
+                                alt="project react landing"
+                                class="w-full h-full object-cover scale-105"
+                            />
+                        </div>
+                        <div class="p-2">
+                            <h3 class="text-2xl">
+                                <span class="font-bold">Nomad</span>
+                            </h3>
+                            <h5 class="text-lg">Delivery Landing Page</h5>
+                            <hr class="opacity-10 my-4" />
+                            <h5 class="text-lg pb-3">Technologies</h5>
+                            <div class="flex gap-4 flex-wrap">
+                                <div class="px-4 py-2 bg-white/5 rounded-xl">
+                                    HTML
+                                </div>
+                                <div class="px-4 py-2 bg-white/5 rounded-xl">
+                                    CSS
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- single project 09 end -->
+                </div>
+                <!-- project section end -->
+            </div>
+        </section>
+        <!---------  Project Section End  --------->
+
+        <!---------  About Section Start  --------->
+        <section id="about" class="py-24">
+            <div class="container">
+                <!-- section header start -->
+                <div class="text-center pb-8 md:pb-16">
+                    <h2 class="text-3xl md:text-6xl font-bold text-amber-500">
+                        Want to know about me 😃
+                    </h2>
+                </div>
+                <!-- section header end -->
+
+                <div class="flex flex-col lg:flex-row gap-24 justify-between items-center">
+                    <!-- about left -->
+                    <div class="text-center">
+                        <img
+                        src="src/assets/mypic.jpg"
+                        alt="my photo"
+                        class="max-w-[600px] w-full flex-grow basis-1/2 mt-0 lg:-mt-24 pl-0 lg:pl-32"
+                    />
+                    <p class="text-2xl">Worked on</p>
+                    <div class="mt-4">
+                        <img src="https://freelogopng.com/images/all_img/1656737394fiverr-png-logo.png" alt="" class="max-w-[100px] mx-auto">
+                        <p class="mt-4">Level One <a target="_blank" href="https://www.fiverr.com/shuvo_official" class="ml-2 px-2 py-1 rounded-full bg-green-500 text-black">Click to visit</a></p>
+                    </div>
+                    </div>
+                    <!-- about right -->
+                    <div class="flex-grow pl-0 md:pl-36 items-center justify-center -mt-16 lg:mt-16 text-center lg:text-left">
+                        <div class="pb-8">
+                            <h4 class="text-2xl lg:text-4xl font-bold text-white">
+                                Educational Background
+                            </h4>
+                            <p class="text-2xl pt-4">
+                                B.Sc in CSE from Leading University, Sylhet
+                            </p>
+                        </div>
+                        <div class="pb-8">
+                            <h4 class="text-2xl lg:text-4xl font-bold text-white">
+                                Cirtificates
+                            </h4>
+                            <div class="text-2xl pt-4">
+                                Mern Stack Development
+                                <div class="text-[16px] pt-2"></div>
+                                    Ostad (online)
+                                </div>
+                            </div>
+                            <div class="text-2xl pt-4">
+                                Web Design and Development
+                                <div class="text-[16px] pt-2">
+                                    Bangladesh Hi-Tech Park Authority
+                                </div>
+                            </div>
+                            <div class="text-2xl pt-4">
+                                Web App Design & Development Training
+                                <div class="text-[16px] pt-2">
+                                    Salah Software, Sylhet
+                                </div>
+                            </div>
+                            <div
+                                class="flex flex-col md:flex-row gap-0 md:gap-4 items-center"
+                            >
+                                <a
+                                    target="_blank"
+                                    href="https://drive.google.com/file/d/1MVB_Qx6jWu--58uCusOzXOx-n5Tg-NI9/view?usp=sharing"
+                                    class="inline-block text-md md:text-2xl px-8 py-4 mt-12 bg-amber-500 text-black font-bold rounded-full"
+                                    >Download CV 👇</a
+                                >
+                                <div class="flex items-center gap-4">
+                                    <a
+                                    href="https://github.com/shuvoslashn"
+                                    target="_blank"
+                                    ><i
+                                        class="bx bxl-github text-5xl inline-block pt-12"
+                                    ></i
+                                ></a>
+                                <a
+                                    href="https://www.linkedin.com/in/shuvoslashn"
+                                    target="_blank"
+                                >
+                                    <i
+                                        class="bx bxl-linkedin-square text-5xl inline-block pt-12"
+                                    ></i>
+                                </a>
+                                <a
+                                    href="https://www.youtube.com/@shuvosarker673"
+                                    target="_blank"
+                                >
+                                    <i
+                                        class="bx bxl-youtube text-6xl inline-block pt-12"
+                                    ></i>
+                                </a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!---------  About Section End  --------->
+
+        <!---------  Footer Start  --------->
+        <footer
+            class="footer footer-center p-10 bg-base-200 text-base-content rounded"
+        >
+            <aside>
+                <p>
+                    Copyright © 2023 - by Shuvo Sarker
+                </p>
+            </aside>
+        </footer>
+        <!---------  Footer End  --------->
+    </body>
+</html>
