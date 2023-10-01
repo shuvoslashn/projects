@@ -2,11 +2,14 @@ import React from "react";
 import Header from "./components/sections/Header";
 import Homepage from "./pages/Homepage";
 import Footer from "./components/sections/Footer";
+import Headroom from "react-headroom";
 
 const App = () => {
     return (
         <>
-            <Header />
+            <Headroom>
+                <Header />
+            </Headroom>
             <Homepage />
             <Footer />
         </>
