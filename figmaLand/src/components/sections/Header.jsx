@@ -6,7 +6,7 @@ import { useState } from "react";
 const Header = () => {
     const [open, setOpen] = useState(false);
     return (
-        <header className='py-3 relative'>
+        <header className='py-3 relative bg-zinc-950/75 backdrop-blur-lg'>
             <div className='container flex justify-between items-center'>
                 {/* logo here */}
                 <div className='-mt-3'>
