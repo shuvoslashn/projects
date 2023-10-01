@@ -1,0 +1,36 @@
+@font-face {
+    font-family: CabinetGrotesk;
+    src: url("./fonts/CabinetGrotesk.ttf");
+    font-weight: 100 900;
+    font-style: normal;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    * {
+        font-family: CabinetGrotesk;
+        font-weight: 500;
+    }
+    body::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    body {
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-weight: 700;
+    }
+    .shadow-btn {
+        @apply outline outline-1 rounded-md shadow-[0px_5px_0_black] hover:mt-[3px] hover:shadow-[0_2px_0_black] duration-200;
+    }
+}
