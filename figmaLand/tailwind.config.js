@@ -14,6 +14,9 @@ export default {
             screens: {
                 xl: "1140px",
             },
+            colors: {
+                primary: "#4452FE",
+            },
         },
     },
     plugins: [],

@@ -15,7 +15,7 @@ const Button = ({ children, sx, style }) => {
                 <button
                     className={` rounded-sm inline-block ${
                         style ? style : "px-8 py-3"
-                    } bg-[#4452FE] border border-[#4452FE] text-white hover:bg-opacity-80 duration-300 hover:border-opacity-80`}
+                    } bg-[#4452FE] border border-[#4452FE] text-white hover:bg-opacity-75 duration-300 hover:border-opacity-75`}
                 >
                     {children}
                 </button>
