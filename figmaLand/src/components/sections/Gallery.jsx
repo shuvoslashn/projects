@@ -16,7 +16,7 @@ const Gallery = () => {
                 />
                 <div className='mt-16'>
                     <SlideshowLightbox
-                        className='container grid grid-cols-1 md:grid-cols-3 gap-5 mx-auto'
+                        className='grid grid-cols-1 md:grid-cols-3 gap-5 mx-auto'
                         showThumbnails={true}
                     >
                         <img
