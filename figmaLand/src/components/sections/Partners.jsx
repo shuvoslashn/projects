@@ -19,7 +19,7 @@ const Partners = () => {
                 text={`We focus on ergonomics and meeting you where you work. It's only a keystroke away.`}
             />
             <div className='mt-8 md:mt-16 flex flex-col gap-8'>
-                <Marquee speed={10} autoFill={true}>
+                <Marquee speed={10} autoFill={true} className=' z-0'>
                     <img className='mx-5' src={airbnb} alt='airbnb' />
                     <img className='mx-5' src={calandy} alt='calandy' />
                     <img className='mx-5' src={canva} alt='canva' />
@@ -30,7 +30,12 @@ const Partners = () => {
                     <img className='mx-5' src={spotify} alt='spotify' />
                     <img className='mx-5' src={upwork} alt='upwork' />
                 </Marquee>
-                <Marquee speed={10} autoFill={true} direction=''>
+                <Marquee
+                    speed={10}
+                    autoFill={true}
+                    direction=''
+                    className=' z-0'
+                >
                     <img className='mx-5' src={coinbase} alt='coinbase' />
                     <img className='mx-5' src={calandy} alt='calandy' />
                     <img className='mx-5' src={google} alt='google' />
