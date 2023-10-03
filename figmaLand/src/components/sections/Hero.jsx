@@ -4,7 +4,7 @@ import Screens from "./../../assets/screens.png";
 
 const Hero = () => {
     return (
-        <section className=''>
+        <section className='' id='herotop'>
             <div className='container text-center'>
                 <div className='max-w-xl w-full mx-auto py-16 sm:py-24'>
                     <h1 className='text-4xl md:text-6xl font-bold leading-[120%] pb-6'>

@@ -6,7 +6,7 @@ import Boards from "./../../assets/Boards.png";
 
 const Contents = () => {
     return (
-        <section className='py-16 md:24 bg-zinc-950'>
+        <section className='py-16 md:24 bg-zinc-950' id='contents'>
             <div className='container'>
                 <SectionHeading
                     title={"Contents"}

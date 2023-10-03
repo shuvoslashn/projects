@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 import logo from "./../../assets/logo.png";
 import Button from "./../Button";
 import { useState } from "react";
@@ -6,7 +6,10 @@ import { useState } from "react";
 const Header = () => {
     const [open, setOpen] = useState(false);
     return (
-        <header className='py-3 relative bg-zinc-950/75 backdrop-blur-lg'>
+        <header
+            className='py-3 relative bg-zinc-950/75 backdrop-blur-lg'
+            id='header'
+        >
             <div className='container flex justify-between items-center'>
                 {/* logo here */}
                 <div className='-mt-3'>
@@ -15,27 +18,36 @@ const Header = () => {
 
                 {/* menu here */}
                 <nav className='hidden md:flex gap-8'>
-                    <NavLink className={"hover:text-white duration-300"} to='/'>
+                    <AnchorLink
+                        className={"hover:text-white duration-300"}
+                        href='#root'
+                    >
                         Home
-                    </NavLink>
-                    <NavLink
+                    </AnchorLink>
+                    <AnchorLink
                         className={"hover:text-white duration-300"}
-                        to='/products'
+                        href='#features'
                     >
-                        Products
-                    </NavLink>
-                    <NavLink
+                        Features
+                    </AnchorLink>
+                    <AnchorLink
                         className={"hover:text-white duration-300"}
-                        to='/about'
+                        href='#contents'
                     >
-                        About
-                    </NavLink>
-                    <NavLink
+                        Contents
+                    </AnchorLink>
+                    <AnchorLink
                         className={"hover:text-white duration-300"}
-                        to='/contact'
+                        href='#gallery'
                     >
-                        Contact
-                    </NavLink>
+                        Gallery
+                    </AnchorLink>
+                    <AnchorLink
+                        className={"hover:text-white duration-300"}
+                        href='#testimonial'
+                    >
+                        Testimonial
+                    </AnchorLink>
                 </nav>
 
                 {/* Login Menu */}
@@ -58,10 +70,33 @@ const Header = () => {
                 {/* Responsive menu here */}
                 {open && (
                     <nav className='transition-all duration-300 flex gap-8 flex-col absolute w-[80vw] top-20 left-1/2 -translate-x-1/2  bg-zinc-900 text-center mx-auto justify-center items-center rounded-md py-8'>
-                        <NavLink to='/'>Home</NavLink>
-                        <NavLink to='/products'>Products</NavLink>
-                        <NavLink to='/about'>About</NavLink>
-                        <NavLink to='/contact'>Contact</NavLink>
+                        <AnchorLink onClick={() => setOpen(false)} href='#root'>
+                            Home
+                        </AnchorLink>
+                        <AnchorLink
+                            onClick={() => setOpen(false)}
+                            href='#features'
+                        >
+                            Features
+                        </AnchorLink>
+                        <AnchorLink
+                            onClick={() => setOpen(false)}
+                            href='#contents'
+                        >
+                            Contents
+                        </AnchorLink>
+                        <AnchorLink
+                            onClick={() => setOpen(false)}
+                            href='#gallery'
+                        >
+                            Gallery
+                        </AnchorLink>
+                        <AnchorLink
+                            onClick={() => setOpen(false)}
+                            href='#testimonial'
+                        >
+                            Testimonial
+                        </AnchorLink>
                     </nav>
                 )}
             </div>

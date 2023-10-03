@@ -5,7 +5,7 @@ import ChatFront from "./../../assets/ChatFront.png";
 
 const Features = () => {
     return (
-        <section className='py-16 md:py-24 bg-zinc-900/50'>
+        <section className='py-16 md:py-24 bg-zinc-900/50' id='features'>
             <div className='container'>
                 <SectionHeading
                     title={"Features"}

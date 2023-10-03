@@ -8,7 +8,7 @@ const Gallery = () => {
         initLightboxJS("Insert License key", "Insert plan type here");
     });
     return (
-        <section className='py-16 md:py-24 bg-zinc-900/50'>
+        <section className='py-16 md:py-24 bg-zinc-900/50' id='gallery'>
             <div className='container'>
                 <SectionHeading
                     title={"Gallery"}

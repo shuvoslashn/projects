@@ -51,4 +51,10 @@
         -ms-overflow-style: none; /* IE and Edge */
         scrollbar-width: none; /* Firefox */
     }
+    button.scroll-to-top.scroll-top {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        background-color: #4452fe !important;
+    }
 }
