@@ -8,7 +8,8 @@ const Hero = () => {
             <div className='container text-center'>
                 <div className='max-w-xl w-full mx-auto py-16 sm:py-24'>
                     <h1 className='text-4xl md:text-6xl font-bold leading-[120%] pb-6'>
-                        Work at the speed of thought
+                        Work at the <span className=' effect-text'>speed</span>{" "}
+                        of thought
                     </h1>
                     <p className='text-xl leading-[1.7]'>
                         Most calendars are designed for teams. Slate is designed

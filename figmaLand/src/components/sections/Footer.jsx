@@ -6,7 +6,7 @@ const Footer = () => {
         <footer>
             <div className='bg-zinc-900/20 py-12'>
                 <div className='container flex flex-col md:flex-row justify-between gap-8 md:gap-24 xl:gap-40'>
-                    <div className='grid grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-12 justify-between flex-wrap'>
+                    <div className='grid grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-12 flex-grow'>
                         <div className=''>
                             <h2 className='text-xl pb-4 font-semibold'>
                                 Fingertipe
@@ -44,7 +44,7 @@ const Footer = () => {
                             <h2 className='text-xl font-semibold'>Address</h2>
                             <div className=''>
                                 <i className='ri-map-pin-2-line mr-2' />
-                                <span>7480 Mockingbird Hill undefined</span>
+                                <span>7480 Mockingbird</span>
                             </div>
                             <div className=''>
                                 <i className='ri-phone-fill mr-2' />
