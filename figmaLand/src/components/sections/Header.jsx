@@ -12,9 +12,9 @@ const Header = () => {
         >
             <div className='container flex justify-between items-center'>
                 {/* logo here */}
-                <div className='-mt-3'>
+                <a href='http://figma-land-shuvo.surge.sh/' className='-mt-3'>
                     <img src={logo} alt='figma land' />
-                </div>
+                </a>
 
                 {/* menu here */}
                 <nav className='hidden md:flex gap-8'>
