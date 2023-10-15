@@ -31,7 +31,7 @@ const Testimonial = () => {
                                     <h6 className='text-gray-500'>
                                         {e.country}
                                     </h6>
-                                    <p>
+                                    <p className='text-xl mt-2'>
                                         {e.text.substring(0, 100)}
                                         {e.text.length > 100 ? "..." : ""}
                                     </p>
@@ -60,7 +60,7 @@ const Testimonial = () => {
                                     <h6 className='text-gray-500'>
                                         {e.country}
                                     </h6>
-                                    <p>
+                                    <p className='text-xl mt-2'>
                                         {e.text.substring(0, 100)}
                                         {e.text.length > 100 ? "..." : ""}
                                     </p>
