@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+// const { AnchorProvider, AnchorLink, AnchorContext } = ReactAnchorNavigation;
+import { AnchorLink } from "react-anchor-navigation";
 import Headroom from "react-headroom";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Header = () => {
     const [open, setOpen] = useState(false);
@@ -15,78 +17,81 @@ const Header = () => {
 
                     {/* menu */}
                     <nav className='hidden lg:flex gap-2'>
-                        <NavLink
+                        <AnchorLink
                             className={({ isActive }) =>
                                 isActive
                                     ? "bg-[url('https://i.ibb.co/KLGTLwL/Vector-2.png')] bg-contain bg-no-repeat bg-bottom px-4 py-2 text-xl"
                                     : "px-4 py-2 text-xl"
                             }
-                            to='/'
+                            href='#home'
                         >
                             Home
-                        </NavLink>
-                        <NavLink
+                        </AnchorLink>
+                        <AnchorLink
                             className={({ isActive }) =>
                                 isActive
                                     ? "bg-[url('https://i.ibb.co/KLGTLwL/Vector-2.png')] bg-contain bg-no-repeat bg-bottom px-4 py-2 text-xl"
                                     : "px-4 py-2 text-xl"
                             }
-                            to='/about'
+                            href='#aboutme'
                         >
                             About
-                        </NavLink>
-                        <NavLink
+                        </AnchorLink>
+                        <AnchorLink
                             className={({ isActive }) =>
                                 isActive
                                     ? "bg-[url('https://i.ibb.co/KLGTLwL/Vector-2.png')] bg-contain bg-no-repeat bg-bottom px-4 py-2 text-xl"
                                     : "px-4 py-2 text-xl"
                             }
-                            to='/portfolio'
-                        >
-                            Portfolio
-                        </NavLink>
-                        <NavLink
-                            className={({ isActive }) =>
-                                isActive
-                                    ? "bg-[url('https://i.ibb.co/KLGTLwL/Vector-2.png')] bg-contain bg-no-repeat bg-bottom px-4 py-2 text-xl"
-                                    : "px-4 py-2 text-xl"
-                            }
-                            to='/testimonial'
+                            href='#testimonial'
                         >
                             Testimonial
-                        </NavLink>
-                        <NavLink
+                        </AnchorLink>
+                        <AnchorLink
                             className={({ isActive }) =>
                                 isActive
                                     ? "bg-[url('https://i.ibb.co/KLGTLwL/Vector-2.png')] bg-contain bg-no-repeat bg-bottom px-4 py-2 text-xl"
                                     : "px-4 py-2 text-xl"
                             }
-                            to='/contact'
+                            href='#projects'
+                        >
+                            Projects
+                        </AnchorLink>
+                        <AnchorLink
+                            className={({ isActive }) =>
+                                isActive
+                                    ? "bg-[url('https://i.ibb.co/KLGTLwL/Vector-2.png')] bg-contain bg-no-repeat bg-bottom px-4 py-2 text-xl"
+                                    : "px-4 py-2 text-xl"
+                            }
+                            href='#contact'
                         >
                             Contact
-                        </NavLink>
+                        </AnchorLink>
                     </nav>
 
                     {/* social icons */}
                     <div className='hidden lg:flex gap-2 h-12 justify-center items-center'>
-                        <Link
+                        <a
                             className='text-2xl w-10 h-[35px] flex justify-center items-center shadow-btn'
-                            to={""}
+                            href='https://github.com/shuvoslashn'
+                            target='_blank'
                         >
                             <i className='ri-github-line' />
-                        </Link>
-                        <Link
+                        </a>
+                        <a
                             className='text-2xl w-10 h-[35px] flex justify-center items-center shadow-btn'
-                            to={""}
+                            href='https://www.linkedin.com/in/shuvoslashn/'
+                            target='_blank'
                         >
                             <i className='ri-linkedin-line' />
-                        </Link>
-                        <Link
+                        </a>
+                        <a
                             className='text-2xl w-10 h-[35px] flex justify-center items-center shadow-btn'
-                            to={""}
+                            href='https://www.behance.net/imshuvosarker'
+                            target='_blank'
                         >
-                            <i className='ri-facebook-line' />
-                        </Link>
+                            <i className='ri-behance-line' />
+                        </a>
                     </div>
 
                     {/* Responsive menu icon */}
@@ -111,7 +116,7 @@ const Header = () => {
                             </button>
                             {/* menu */}
                             <nav className='flex flex-col gap-2 justify-center items-center pt-16'>
-                                <NavLink
+                                <AnchorLink
                                     className={({ isActive }) =>
                                         isActive
                                             ? " scale-150 font-black px-4 py-2 text-xl"
@@ -120,8 +125,8 @@ const Header = () => {
                                     to='/'
                                 >
                                     Home
-                                </NavLink>
-                                <NavLink
+                                </AnchorLink>
+                                <AnchorLink
                                     className={({ isActive }) =>
                                         isActive
                                             ? " scale-150 font-black px-4 py-2 text-xl"
@@ -130,8 +135,8 @@ const Header = () => {
                                     to='/about'
                                 >
                                     About
-                                </NavLink>
-                                <NavLink
+                                </AnchorLink>
+                                <AnchorLink
                                     className={({ isActive }) =>
                                         isActive
                                             ? " scale-150 font-black px-4 py-2 text-xl"
@@ -140,8 +145,8 @@ const Header = () => {
                                     to='/portfolio'
                                 >
                                     Portfolio
-                                </NavLink>
-                                <NavLink
+                                </AnchorLink>
+                                <AnchorLink
                                     className={({ isActive }) =>
                                         isActive
                                             ? " scale-150 font-black px-4 py-2 text-xl"
@@ -150,8 +155,8 @@ const Header = () => {
                                     to='/testimonial'
                                 >
                                     Testimonial
-                                </NavLink>
-                                <NavLink
+                                </AnchorLink>
+                                <AnchorLink
                                     className={({ isActive }) =>
                                         isActive
                                             ? " scale-150 font-black px-4 py-2 text-xl"
@@ -160,29 +165,32 @@ const Header = () => {
                                     to='/contact'
                                 >
                                     Contact
-                                </NavLink>
+                                </AnchorLink>
                             </nav>
 
                             {/* social icons */}
                             <div className='mt-16 flex gap-4 h-12 justify-center items-center'>
-                                <Link
+                                <a
                                     className='text-2xl w-10 h-[35px] flex justify-center items-center shadow-btn'
-                                    to={""}
+                                    href='https://github.com/shuvoslashn'
+                                    target='_blank'
                                 >
                                     <i className='ri-github-line' />
-                                </Link>
-                                <Link
+                                </a>
+                                <a
                                     className='text-2xl w-10 h-[35px] flex justify-center items-center shadow-btn'
-                                    to={""}
+                                    href='https://www.linkedin.com/in/shuvoslashn/'
+                                    target='_blank'
                                 >
                                     <i className='ri-linkedin-line' />
-                                </Link>
-                                <Link
+                                </a>
+                                <a
                                     className='text-2xl w-10 h-[35px] flex justify-center items-center shadow-btn'
-                                    to={""}
+                                    href='https://www.behance.net/imshuvosarker'
+                                    target='_blank'
                                 >
-                                    <i className='ri-facebook-line' />
-                                </Link>
+                                    <i className='ri-behance-line' />
+                                </a>
                             </div>
                         </div>
                     )}

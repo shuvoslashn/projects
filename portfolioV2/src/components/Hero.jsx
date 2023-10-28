@@ -24,10 +24,13 @@ const Hero = () => {
                         developer.
                     </h1>
                     <p className='mb-8'>
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the 1500s,
-                        when an unknown
+                        I'm Shuvo Sarker, a dedicated web developer specializing
+                        in front-end design and development, with expertise in
+                        HTML5, CSS3, Bootstrap, Tailwind and various CMS
+                        platforms. I thrive on challenges, continuously
+                        expanding my expertise, and I'm passionate about
+                        crafting exceptional user experiences. Eager to
+                        contribute to innovative projects.
                     </p>
                     <div className='h-16'>
                         <Link

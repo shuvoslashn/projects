@@ -5,6 +5,7 @@ import AboutMe from "../components/AboutMe";
 import Testimonial from "../components/Testimonial";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
+import { AnchorSection } from "react-anchor-navigation";
 
 const Homepage = () => {
     return (

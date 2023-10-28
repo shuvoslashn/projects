@@ -1,10 +1,22 @@
 import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import ByCategoryPage from "./pages/ByCategoryPage";
+import DetailsPage from "./pages/DetailsPage";
 
 const App = () => {
     return (
-        <div className='w-full h-screen flex justify-center items-center'>
-            <h2 className='text-8xl'>Simple Blog</h2>
-        </div>
+        <BrowserRouter>
+            <Routes>
+                
+                <Route path='/' element={<HomePage />} />
+                <Route
+                    path='/category/:categoryID'
+                    element={<ByCategoryPage />}
+                />
+                <Route path='/details/:postID' element={<DetailsPage />} />
+            </Routes>
+        </BrowserRouter>
     );
 };
 

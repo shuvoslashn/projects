@@ -12,6 +12,7 @@
     * {
         font-family: CabinetGrotesk;
         font-weight: 500;
+        scroll-behavior: smooth;
     }
     body::-webkit-scrollbar {
         display: none;
