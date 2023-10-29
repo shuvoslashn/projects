@@ -45,7 +45,7 @@ const AboutMe = () => {
                         <div className='h-12'>
                             <a
                                 className='text-xl font-semibold px-8 py-4 shadow-btn bg-white inline-flex justify-center items-center'
-                                href='https://drive.google.com/file/d/1MVB_Qx6jWu--58uCusOzXOx-n5Tg-NI9/view'
+                                href='https://drive.google.com/file/d/1qguFdRu6Z3hWUugkQM8jnuASqMzji48R/view?usp=sharing'
                                 target='_blank'
                             >
                                 <i className='ri-download-line mr-3' />

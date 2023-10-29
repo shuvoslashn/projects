@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import SubHeading from "./SubHeading";
+import { AnchorLink } from "react-anchor-navigation";
 
 const Hero = () => {
     return (
@@ -33,12 +34,12 @@ const Hero = () => {
                         contribute to innovative projects.
                     </p>
                     <div className='h-16'>
-                        <Link
-                            to={"/portfolio"}
+                        <AnchorLink
+                            href='#projects'
                             className='text-xl font-semibold px-8 py-3 inline-block shadow-btn bg-white'
                         >
                             See My Works
-                        </Link>
+                        </AnchorLink>
                     </div>
                 </div>
 

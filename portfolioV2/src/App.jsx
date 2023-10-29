@@ -4,6 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import Homepage from "./pages/Homepage";
 import Footer from "./components/Footer";
 import { AnchorSection } from "react-anchor-navigation";
+import NotFound from "./pages/NotFound";
 
 const App = () => {
     return (
@@ -12,6 +13,7 @@ const App = () => {
             <Header />
             <Routes>
                 <Route path='/' element={<Homepage />} />
+                <Route path='*' element={<NotFound />} />
             </Routes>
             <Footer />
         </>
