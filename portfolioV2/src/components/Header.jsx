@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-// const { AnchorProvider, AnchorLink, AnchorContext } = ReactAnchorNavigation;
 import { AnchorLink } from "react-anchor-navigation";
 import Headroom from "react-headroom";
 import { Link } from "react-router-dom";
@@ -117,52 +116,57 @@ const Header = () => {
                             {/* menu */}
                             <nav className='flex flex-col gap-2 justify-center items-center pt-16'>
                                 <AnchorLink
+                                    onClick={() => setOpen(false)}
                                     className={({ isActive }) =>
                                         isActive
                                             ? " scale-150 font-black px-4 py-2 text-xl"
                                             : "px-4 py-2 text-xl"
                                     }
-                                    to='/'
+                                    href='#home'
                                 >
                                     Home
                                 </AnchorLink>
                                 <AnchorLink
+                                    onClick={() => setOpen(false)}
                                     className={({ isActive }) =>
                                         isActive
                                             ? " scale-150 font-black px-4 py-2 text-xl"
                                             : "px-4 py-2 text-xl"
                                     }
-                                    to='/about'
+                                    href='#aboutme'
                                 >
                                     About
                                 </AnchorLink>
                                 <AnchorLink
+                                    onClick={() => setOpen(false)}
                                     className={({ isActive }) =>
                                         isActive
                                             ? " scale-150 font-black px-4 py-2 text-xl"
                                             : "px-4 py-2 text-xl"
                                     }
-                                    to='/portfolio'
+                                    href='#projects'
                                 >
                                     Portfolio
                                 </AnchorLink>
                                 <AnchorLink
+                                    onClick={() => setOpen(false)}
                                     className={({ isActive }) =>
                                         isActive
                                             ? " scale-150 font-black px-4 py-2 text-xl"
                                             : "px-4 py-2 text-xl"
                                     }
-                                    to='/testimonial'
+                                    href='#testimonial'
                                 >
                                     Testimonial
                                 </AnchorLink>
                                 <AnchorLink
+                                    onClick={() => setOpen(false)}
                                     className={({ isActive }) =>
                                         isActive
                                             ? " scale-150 font-black px-4 py-2 text-xl"
                                             : "px-4 py-2 text-xl"
                                     }
-                                    to='/contact'
+                                    href='#contact'
                                 >
                                     Contact
                                 </AnchorLink>
